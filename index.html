@@ -2,253 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Story Camp</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Story Camp</title>
     <style>
-        html {
-          scroll-behavior: smooth;
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Futura', sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            text-align: center;
         }
-      </style>
+        h1 {
+            font-size: 0.8rem;
+            margin-bottom: 2rem;
+            text-transform: lowercase;
+        }
+        h1 span {
+            font-size: 1.6rem; /* 2x larger than "project" */
+        }
+        h2 {
+            font-size: 2rem;
+            font-style: italic;
+            margin-bottom: 4rem;
+        }
+        h3 {
+            font-size: 1.2rem;
+            margin-top: 8rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
 </head>
-<body class="bg-white text-gray-600">
-
-    <!-- Navigation Bar -->
-    <header class="flex flex-wrap items-center justify-between px-4 py-4 bg-white">
-        <div class="text-lg font-bold">Story Camp</div>
-        <nav class="space-x-2 hidden md:flex">
-            <!-- <a href="#" class="text-gray-300 hover:text-white">About</a>
-            <a href="#" class="text-gray-300 hover:text-white">Programs</a>
-            <a href="#" class="text-gray-300 hover:text-white">Contact</a>-->
-        </nav>
-        <div class="flex space-x-2">
-           
-            <button onclick="window.location.href='mailto:peter@storycamp.ca?subject=Story%20Camp%20Registration'" class="bg-red-600 text-white px-4 py-2 rounded text-sm hover:bg-red-700">Register</button>
-        </div>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="py-16 px-4 text-center bg-cover bg-center" style="background-image: url('dragon.jpg');">
-        <div class="max-w-4xl mx-auto bg-gray-300 bg-opacity-50 p-6 md:p-8 rounded-lg">
-            <h1 class="text-3xl md:text-5xl font-bold mb-4">Create Like a Storyteller</h1>
-            <p class="text-base md:text-lg mb-6">
-                Everyone has a story to tell; bring your story come to life!
-            </p>
-        </div>
-    </section>
-
-    <!-- Links and Quick Info Section -->
-    <section class="flex flex-col md:flex-row max-w-6xl mx-auto mt-6 px-4 space-y-6 md:space-y-0 md:space-x-6">
-        <div class="w-full md:w-1/3 bg-gray-300 p-4 rounded-lg">
-            <h3 class="text-xl font-bold mb-4">Quick Links</h3>
-            <ul class="space-y-2">
-                <li><a href="#schedule" class="text-blue-500 hover:text-white">March Break (2025)</a></li>
-                <li><a href="#schedule" class="text-blue-500 hover:text-white">Summer Camp (2025)</a></li>
-                <li><a href="#team" class="text-blue-500 hover:text-white">The Team</a></li>
-                <li><a href="#schedule" class="text-blue-500 hover:text-white">Pricing</a></li>
-                <li><a href="mailto:peter@storycamp.ca?subject=%20Registration" class="text-blue-500 hover:text-white">Register</a></li>
-            </ul>
-        </div>
-        
-        <!-- Program Description -->
-        <div class="w-full md:w-2/3 bg-gray-100 p-4 md:p-6 rounded-lg">
-            <h2 class="text-3xl md:text-4xl font-bold mb-4">Let's Make A Storybook</h2>
-            <p class="text-base md:text-lg mb-4">
-                At Story Camp, campers will have the opportunity to create a fully bounded story book in one week. The story-making process will be guided by a New York Times published children's book author 
-                <a href="https://www.susanyoon.com/" class="text-blue-500" target="_blank">Susan Yoon</a>.
-            </p>
-        </div>
-    </section>
-
-    <!-- Programs Grid -->
-    <section class="max-w-6xl mx-auto mt-6 px-4">
-        <br />
-        <h2 class="text-2xl md:text-3xl font-bold mb-4 text-center">Book Making</h2>
-
-        <p class="text-base md:text-lg mb-4">
-            We are a NEW camp. Our goal is to offer young capable hands the opportunity to learn by doing. The approach is to bring together real-world professional artists to show and teach your children the art of storytelling. 
-            We will start with book making. 
-            <br /><br />
-            This is not a DIY camp. This is a camp that will accellerate learning by allowing the campers to have direct insight from those currently in the publishing industry. We are professional writers, illustrators, and artists. 
-            <br /><br />
-            Each day, campers will learn about the different pillars of the storytelling process. Starting with ideation, to the binding of the book. It will be a 5 day, intensive process that will push the campers to create a book that they will be very proud of.
-        
-        </p>
-
-
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            <div class="bg-gray-200 p-4 rounded-lg hover:shadow-lg transform transition-transform hover:scale-105">
-                <img src="ideate.png" alt="Ideation" class="w-full h-32 object-cover rounded mb-4">
-                <h3 class="text-lg md:text-xl font-bold mb-2">1. Ideation</h3>
-                <p class="text-sm md:text-base">Author lead brainstorming session to kickstart the book making process.</p>
-            </div>
-            <div class="bg-gray-100 p-4 rounded-lg hover:shadow-lg transform transition-transform hover:scale-105">
-                <img src="writing.jpeg" alt="Writing" class="w-full h-32 object-cover rounded mb-4">
-                <h3 class="text-lg md:text-xl font-bold mb-2">2. Story Writing</h3>
-                <p class="text-sm md:text-base">A guided journey to take the concept to a full story.</p>
-            </div>
-            <div class="bg-gray-200 p-4 rounded-lg hover:shadow-lg transform transition-transform hover:scale-105">
-                <img src="storyboard.png" alt="Illustrations" class="w-full h-32 object-cover rounded mb-4">
-                <h3 class="text-lg md:text-xl font-bold mb-2">3. Storyboarding</h3>
-                <p class="text-sm md:text-base">Create the construct of the pages with sketches.</p>
-            </div>
-            <div class="bg-gray-100 p-4 rounded-lg hover:shadow-lg transform transition-transform hover:scale-105">
-                <img src="pencildraw.jpg" alt="Illustrations" class="w-full h-32 object-cover rounded mb-4">
-                <h3 class="text-lg md:text-xl font-bold mb-2">4. Illustrate</h3>
-                <p class="text-sm md:text-base">Begin illustrating the story, one page at a time.</p>
-            </div>
-            <div class="bg-gray-200 p-4 rounded-lg hover:shadow-lg transform transition-transform hover:scale-105">
-                <img src="illustrate.png" alt="Illustrations" class="w-full h-32 object-cover rounded mb-4">
-                <h3 class="text-lg md:text-xl font-bold mb-2">5. Colour</h3>
-                <p class="text-sm md:text-base">Add colour and give new dimensions to the story.</p>
-            </div>
-            <div class="bg-gray-100 p-4 rounded-lg hover:shadow-lg transform transition-transform hover:scale-105">
-                <img src="cover.png" alt="Illustrations" class="w-full h-32 object-cover rounded mb-4">
-                <h3 class="text-lg md:text-xl font-bold mb-2">6. Bind</h3>
-                <p class="text-sm md:text-base">Complete the book and put it all together.</p>
-            </div>
-        </div>
-    </section>
-
-      <!-- Team Members -->
-      <section id="team" class="py-20 text-center">
-        <div class="max-w-6xl mx-auto px-4">
-          <h2 class="text-3xl md:text-4xl font-bold mb-8">Meet the Team</h2>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 text-center">
-            
-            <!-- Team Member 1 -->
-            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-              <img src="Susan.png" alt="Susan Yoon" class="w-32 h-32 mx-auto rounded-full mb-4">
-              <h3 class="text-xl font-semibold text-gray-600">Susan</h3>
-              <p class="text-gray-600">Author, Lead Instructor</p>
-            </div>
-            
-            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-                <img src="danya.jpg" alt="Susan Yoon" class="w-32 h-32 mx-auto rounded-full mb-4">
-                <h3 class="text-xl font-semibold text-gray-600">Pav</h3>
-                <p class="text-gray-600">Illustrator, Instructor</p>
-              </div>
-
-            <!-- Team Member 2 -->
-            <div class="bg-gray-100 p-6 rounded-lg shadow-lg">
-              <img src="peter.png" alt="Peter Yoon" class="w-32 h-32 mx-auto rounded-full mb-4">
-              <h3 class="text-xl font-semibold text-gray-600">Peter</h3>
-              <p class="text-gray-600">Camp Director</p>
-            </div>
-            
-
-          </div>
-          <br />
-          <p class="text-2xl">Connect with us! <br /> We would love to hear from you. <br />
-            Call (416-836-9056) or email (peter@storycamp.ca) <br />
-            us and we will be happy to answer any questions. </p>
-
-        </div>
-      </section>
-
-      <!-- Location -->
-    <section id="location" class="py-20 text-center">
-        <div class="max-w-6xl mx-auto">
-          <h2 class="text-3xl md:text-4xl font-bold mb-8">Our Location</h2>
-          <div class="mb-8">
-
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d72207.35965749586!2d-79.46477067096045!3d43.8761309732778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2adfeef5db1f%3A0x58aa1540c4c3948!2sBayview%20Hill%20Community%20Centre%20%26%20Pool!5e0!3m2!1sen!2sca!4v1730324013290!5m2!1sen!2sca" 
-            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-
-
-          </div>
-          <p class="text-base md:text-lg leading-relaxed">
-            The Camp is located at Bayview Hill Commuinity Centre, ON, Canada. More location details will be available in January 2025.
-          </p>
-        </div>
-      </section>
-
-
-      <section id="schedule" class="py-20 text-center">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">Schedule & Pricing</h2>
-            
-            <!-- 5x5 Table -->
-            <div class="overflow-x-auto">
-                <table class="min-w-full bg-white border border-gray-200 mx-auto">
-                    <thead>
-                        <tr>
-                            <th class="px-6 py-3 border-b text-left text-gray-600 font-bold">PROGRAM</th>
-                            <th class="px-6 py-3 border-b text-left text-gray-600 font-bold">SEASON</th>
-                            <th class="px-6 py-3 border-b text-left text-gray-600 font-bold">FORMAT</th>
-                            <th class="px-6 py-3 border-b text-left text-gray-600 font-bold">PRICE</th>
-                            <th class="px-6 py-3 border-b text-left text-gray-600 font-bold">REGISTER</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Row 1 -->
-                        <tr>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">Book Making</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">March 17-21 2025</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">Half-Day (8:45-11:45 AM)</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">$325</td>
-                            <td class="px-6 py-4 border-b text-left"><button onclick="window.location.href='mailto:peter@storycamp.ca?subject=March%20Break%20Registration'" class="bg-red-600 text-white px-4 py-2 rounded text-sm hover:bg-red-700">
-                                Register
-                            </button></td>
-                        </tr>
-                        <!-- Row 2 -->
-                        <tr>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">Book Making</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">July 7-11 2025</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">Full-Day (8:45 AM - 3:30 PM)</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">$450</td>
-                            <td class="px-6 py-4 border-b text-left"><button onclick="window.location.href='mailto:peter@storycamp.ca?subject=July%207%20-%2011%20Registration'" class="bg-red-600 text-white px-4 py-2 rounded text-sm hover:bg-red-700">
-                                Register
-                            </button></td>
-                        </tr>
-                        <!-- Row 3 -->
-                        <tr>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">Book Making</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">July 14-18 2025</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">Full-Day (8:45 AM - 3:30 PM)</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">$450</td>
-                            <td class="px-6 py-4 border-b text-left"><button onclick="window.location.href='mailto:peter@storycamp.ca?subject=July%2014%20-%2018%20Registration'" class="bg-red-600 text-white px-4 py-2 rounded text-sm hover:bg-red-700">
-                                Register
-                            </button></td>
-                        </tr>
-                        <!-- Row 4 -->
-                        <tr>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">Book Making</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">July 21-25 2025</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">Full-Day (8:45 AM - 3:30 PM)</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">$450</td>
-                            <td class="px-6 py-4 border-b text-left"><button onclick="window.location.href='mailto:peter@storycamp.ca?subject=July%2021%20-%2025%20Registration'" class="bg-red-600 text-white px-4 py-2 rounded text-sm hover:bg-red-700">
-                                Register
-                            </button></td>
-                        </tr>
-                        <!-- Row 5 -->
-                        <tr>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">Book Making</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">July 28 - Aug 1 2025</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">Full-Day (8:45 AM - 3:30 PM)</td>
-                            <td class="px-6 py-4 border-b text-left text-gray-600">$450</td>
-                            <td class="px-6 py-4 text-left"><button onclick="window.location.href='mailto:peter@storycamp.ca?subject=July%2028%20-%20Aug%201%20Registration'" class="bg-red-600 text-white px-4 py-2 rounded text-sm hover:bg-red-700">
-                                Register
-                            </button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            
-            <p class="italic">All prices are in CAD. Listed price is per child, per week.</p>
-            
-            </div>
-            
-        </div>
-    </section>
-
-
-
-
-    <!-- Footer -->
-    <footer class="bg-gray-500 text-white py-4 mt-6 text-center">
-        <p>&copy; 2025 Story Camp. All rights reserved.</p>
-    </footer>
-
+<body>
+    <h1>project <span>story camp</span></h1>
+    <h2>learn from real Canadian artists</h2>
+    <div style="margin-bottom: 8rem;"></div>
+    <img src="storycamp-image.jpg" alt="Story Camp Image">
+    <div style="margin-bottom: 8rem;"></div>
+    <h3>the sun will rise again</h3>
 </body>
 </html>
